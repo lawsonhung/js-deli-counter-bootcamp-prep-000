@@ -1,11 +1,15 @@
+var ans = 0;
+
 // Adds a new customer (variable name: newName) to the end of the deli line (variable name: currentLine).
-function takeANumber(currentLine, newName) {
+function takeANumber(currentLine) {
   
-  // Appends new customer's name to the end of the deli line.
-  currentLine.push(newName);
+  ans++;
+  
+  currentLine.push(ans);
+  return `Welcome customer number ${ans}.`;
   
   // Returns "Welcome (insert new customer name here). You are number (insert the length of the deli line, which is the customer's place in line behind everyone in front of them) in line.".
-  return `Welcome, ${newName}. You are number ${currentLine.length} in line.`;
+  //return `Welcome, ${newName}. You are number ${currentLine.length} in line.`;
 }
 
 
