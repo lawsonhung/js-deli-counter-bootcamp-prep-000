@@ -1,15 +1,20 @@
+// TECHNICAL INTERVIEW: Make ans a global variable
 var ans = 0;
 
-// Adds a new customer (variable name: newName) to the end of the deli line (variable name: currentLine).
+// DELI COUNTER LAB: Adds a new customer (variable name: newName) to the end of the deli line (variable name: currentLine).
+// TECHNICAL INTERVIEW: currentLine stores an array of numbers. takeANumber returns "Welcome customer number (insert customer number in line here)."
 function takeANumber(currentLine) {
-  
+  // TECHNICAL INTERVIEW: Increment ans
   ans++;
   
+  // TECHNICAL INERVIEW: Append ans to the end of currentLine
   currentLine.push(ans);
+  // TECHNICAL INTERVIEW: Return "Welcome customer number (insert customer number here)"
   return `Welcome customer number ${ans}.`;
   
-  // Returns "Welcome (insert new customer name here). You are number (insert the length of the deli line, which is the customer's place in line behind everyone in front of them) in line.".
-  //return `Welcome, ${newName}. You are number ${currentLine.length} in line.`;
+  // DELI COUNTER LAB: Returns "Welcome (insert new customer name here). You are number (insert the length of the deli line, which is the customer's place in line behind everyone in front of them) in line.".
+  //DELI COUNTER LAB: ```return `Welcome, ${newName}. You are number ${currentLine.length} in line.`;
+  
 }
 
 
